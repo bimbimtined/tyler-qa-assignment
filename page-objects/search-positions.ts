@@ -39,6 +39,6 @@ export class SearchPositions {
         await this.page.getByRole('combobox', { name: 'Search' }).fill('QA');
         await this.page.keyboard.press('Enter');
         await this.page.getByLabel('QA Team Lead - Data & Insights Solutions (U.S. Only)').click()
-        await this.page.getByRole('link', { name: 'Apply Online' }).first().isVisible();
+        await this.page.getByRole('link', { name: 'Apply Online' }).isVisible();
     }
 }

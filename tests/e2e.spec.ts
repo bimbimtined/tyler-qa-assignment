@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { SearchPositions } from '../page-objects/search-positions';
 import { GeneralInformation } from '../page-objects/general-information';
 
-test.beforeEach('TC_01_Navigate to Tyler Tech Website', async ({ page }) => {
+test.beforeEach('TC_Navigate to Tyler Tech Website', async ({ page }) => {
   const searchPositions = new SearchPositions(page)
   await searchPositions.navigateToUrl()
   // Assert the URL
